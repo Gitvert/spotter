@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
             Widgets.getTitleSection(),
             Widgets.getButtonSection(context),
             Widgets.getTextSection(),
+            Widgets.getBottomButtons(),
           ],
         ),
       ),

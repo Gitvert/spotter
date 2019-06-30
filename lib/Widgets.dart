@@ -76,6 +76,40 @@ class Widgets {
     );
   }
 
+  static Widget getBottomButtons() {
+    return Container(
+      padding: const EdgeInsets.all(32),
+      child: Column(
+        children: [
+          Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Icon(
+              Icons.airport_shuttle,
+              color: Colors.black
+            ),
+            Icon(
+              Icons.camera,
+              color: Colors.black
+            )
+          ]
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+                'Här va det text',
+                style: TextStyle(
+                    color: Colors.deepPurple
+                )
+            ),
+          ]
+        )
+      ]
+      )
+    );
+  }
+
   static Column _buildButtonColumn(Color color, IconData icon, String label) {
     return Column(
         mainAxisSize: MainAxisSize.min,
