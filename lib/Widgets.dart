@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'FavoriteWidget.dart';
+
 class Widgets {
 
   static Widget getImage() {
@@ -41,11 +43,7 @@ class Widgets {
             ),
           ),
           /*3*/
-          Icon(
-            Icons.star,
-            color: Colors.red[500],
-          ),
-          Text('41'),
+          FavoriteWidget(),
         ],
       ),
     );
