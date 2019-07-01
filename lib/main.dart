@@ -9,11 +9,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      title: 'Flutter layout demo',
+      title: 'spotter',
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text('Flutter layout demo'),
+          title: Row(
+            children: [
+              Text('spotter'),
+              Icon(Icons.fitness_center),
+            ]
+          ),
           backgroundColor: Colors.deepOrange,
         ),
         body: ListView.separated(
