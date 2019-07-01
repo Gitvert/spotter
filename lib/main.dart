@@ -16,15 +16,6 @@ class MyApp extends StatelessWidget {
           title: Text('Flutter layout demo'),
           backgroundColor: Colors.deepOrange,
         ),
-        /*body: ListView(
-          children: [
-            Widgets.getImage(),
-            Widgets.getTitleSection(),
-            Widgets.getButtonSection(context),
-            Widgets.getTextSection(),
-            Widgets.getBottomButtons(),
-          ],
-        ),*/
         body: ListView.separated(
           itemCount: 10,
           itemBuilder: (BuildContext context, int index) {
