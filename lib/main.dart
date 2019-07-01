@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.deepOrange,
         ),
         body: ListView.separated(
-          itemCount: 10,
+          itemCount: 3,
           itemBuilder: (BuildContext context, int index) {
-            return  _getMainListChildren(context, 0);
+            return  _getMainListChildren(context, index + 1);
           },
           separatorBuilder: (BuildContext context, int index) {
             return Divider(
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
   Widget _getMainListChildren(BuildContext context, int index) {
     return Column(
       children: [
-        getWeightWidget(),
+        getWeightWidget(index),
       ]
     );
   }
