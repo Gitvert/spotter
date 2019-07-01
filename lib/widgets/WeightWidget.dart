@@ -49,13 +49,30 @@ Widget _getAdjustWidget(String text, int number) {
   );
 }
 
+Widget _getCompleteSetWidget() {
+  return Container(
+    child: ButtonTheme(
+      minWidth: 250,
+      child: FlatButton(
+          onPressed: () {},
+          color: Colors.green[600],
+          textColor: Colors.white,
+          child: Text(
+              "COMPLETE SET"
+          )
+      )
+    )
+  );
+}
+
 Widget getWeightWidget() {
   return Container(
     padding: const EdgeInsets.only(top: 20, bottom: 20),
     child: Column(
       children: [
         _getAdjustWidget("Weight(kg)", 225),
-        _getAdjustWidget("Reps", 10)
+        _getAdjustWidget("Reps", 10),
+        _getCompleteSetWidget(),
       ]
     )
   );
