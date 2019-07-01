@@ -55,7 +55,7 @@ Widget _getCompleteSetWidget() {
       minWidth: 250,
       child: FlatButton(
           onPressed: () {},
-          color: Colors.green[600],
+          color: Colors.green[400],
           textColor: Colors.white,
           child: Text(
               "COMPLETE SET"
@@ -70,7 +70,7 @@ Widget getWeightWidget() {
     padding: const EdgeInsets.only(top: 20, bottom: 20),
     child: Column(
       children: [
-        _getAdjustWidget("Weight(kg)", 225),
+        _getAdjustWidget("Weight (kg)", 225),
         _getAdjustWidget("Reps", 10),
         _getCompleteSetWidget(),
       ]

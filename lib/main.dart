@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'spotter',
       home: Scaffold(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.blueGrey[700],
         appBar: AppBar(
           title: Row(
             children: [
