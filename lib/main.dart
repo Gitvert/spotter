@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spotter/widgets/MainAppBarWidget.dart';
 
 import 'widgets/WeightWidget.dart';
 
@@ -13,20 +14,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blueGrey[700],
-      appBar: AppBar(
-        title: Row(
-            children: [
-              Text('spotter'),
-              Icon(Icons.fitness_center),
-            ]
-        ),
-        backgroundColor: Colors.deepOrange,
-      ),
+      appBar: mainAppBar(),
       body: Center (
         child: FlatButton(
           onPressed: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) => WeightWidget()));
           },
+          color: Colors.white,
           child: Text('LOG SET')
         )
       )

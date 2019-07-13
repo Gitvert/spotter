@@ -1,19 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:spotter/widgets/MainAppBarWidget.dart';
 
 class WeightWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.blueGrey[700],
-        appBar: AppBar(
-          title: Row(
-              children: [
-                Text('spotter'),
-                Icon(Icons.fitness_center),
-              ]
-          ),
-          backgroundColor: Colors.deepOrange,
-        ),
+        appBar: mainAppBar(),
         body: ListView.separated(
           itemCount: 3,
           itemBuilder: (BuildContext context, int index) {
