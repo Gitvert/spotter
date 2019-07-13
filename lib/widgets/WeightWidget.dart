@@ -1,5 +1,43 @@
 import 'package:flutter/material.dart';
 
+class WeightWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        backgroundColor: Colors.blueGrey[700],
+        appBar: AppBar(
+          title: Row(
+              children: [
+                Text('spotter'),
+                Icon(Icons.fitness_center),
+              ]
+          ),
+          backgroundColor: Colors.deepOrange,
+        ),
+        body: ListView.separated(
+          itemCount: 3,
+          itemBuilder: (BuildContext context, int index) {
+            return  _getMainListChildren(context, index + 1);
+          },
+          separatorBuilder: (BuildContext context, int index) {
+            return Divider(
+              height: 24.0,
+              color: Colors.black26,
+            );
+          },
+        )
+    );
+  }
+}
+
+Widget _getMainListChildren(BuildContext context, int index) {
+  return Column(
+      children: [
+        getWeightWidget(index),
+      ]
+  );
+}
+
 Widget _getSetInfoWidget(int set, int reps) {
   return Container(
     padding: const EdgeInsets.only(left: 125, right: 125, top: 5, bottom: 5),
